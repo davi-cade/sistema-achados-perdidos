@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados e Perdidos - Registrar perda</title>
+    <link rel="stylesheet" href="css/registrar-perda.css">
+</head>
+<body>
+<header class="cabecalho">
+    <a class="logo" href="home.html">LOGO</a>
+        <details class="menu-lateral">
+            <summary aria-label="Abrir menu">☰</summary>
+            <nav aria-label="Menu principal">
+                <a href="achados.html">pertences encontrados</a>
+                <a href="registrar-perda.html">registrar perda</a>
+                <a href="meus-registros.html">meus registros</a>
+                <a href="como-funciona.html">como funciona</a>
+                <a href="contato.html">contato</a>
+                <a href="sobre.html">sobre</a>
+                <a href="faq.html">perguntas frequentes</a>
+                <a href="index.html">sair</a>
+            </nav>
+        </details>
+</header>
+<main class="pagina-registrar-perda">
+    <section class="registro-perda" aria-labelledby="titulo-registro">
+        <h1 id="titulo-registro">Registrar pertence perdido</h1>
+        <p>informe as informações do seu pertence</p>
+
+        <form action="registro-realizado.html">
+            <div class="campo-formulario">
+                <label for="nome-objeto">nome do objeto</label>
+                <input type="text" id="nome-objeto" name="nome-objeto" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="categoria">categoria</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="" selected disabled></option>
+                    <option value="eletronicos">eletrônicos</option>
+                    <option value="roupas">roupas</option>
+                    <option value="acessorios">acessórios</option>
+                    <option value="outros">outros</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="descricao">descrição</label>
+                <input type="text" id="descricao" name="descricao" required>
+            </div>
+
+            <div class="linha-campos">
+                <div class="campo-formulario">
+                    <label for="data-perda">data aproximada da perda</label>
+                    <input type="date" id="data-perda" name="data-perda" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="local-perda">local aproximado</label>
+                    <input type="text" id="local-perda" name="local-perda" required>
+                </div>
+            </div>
+
+            <button type="submit">registrar perda</button>
+        </form>
+
+        <p class="aviso-registro">Se o objeto for encontrado, você poderá consultá-lo na paginá de pertences encontrados</p>
+    </section>
+</main>
+</body>
+</html>

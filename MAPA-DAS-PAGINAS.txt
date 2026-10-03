@@ -1,0 +1,18 @@
+MAPA DAS PÁGINAS - SISTEMA DE ACHADOS E PERDIDOS
+
+index.html -> Login
+recuperar-senha.html -> Recuperação de senha
+codigo-email.html -> Código enviado por email
+nova-senha.html -> Definição de nova senha
+home.html -> Página principal
+achados.html -> Todos os objetos
+detalhes.html -> Detalhes do objeto (Garrafa vermelha)
+registrar-perda.html -> Registrar pertence perdido
+registro-realizado.html -> Confirmação do registro
+meus-registros.html -> Usuário / Meus registros
+sobre.html -> Sobre o sistema
+como-funciona.html -> Como funciona
+faq.html -> Perguntas frequentes
+contato.html -> Contato / Secretaria
+
+Observação: o Frame 1 do Figma é o menu lateral e foi incorporado às páginas; ele não virou um HTML separado.

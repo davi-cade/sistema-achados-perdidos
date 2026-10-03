@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados e Perdidos - Login</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<main class="pagina-login">
+    <section class="login-container" aria-labelledby="titulo-login">
+        <h1 id="titulo-login">BEM VINDO(A)</h1>
+        <p>acesse sua conta para continuar</p>
+
+        <form class="form-login" action="home.html">
+            <div class="campo-formulario">
+                <label for="matricula">matricula</label>
+                <input type="text" id="matricula" name="matricula" autocomplete="username" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="senha">senha</label>
+                <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+            </div>
+
+            <button type="submit">ENTRAR</button>
+        </form>
+
+        <p class="recuperar-senha">esqueceu a senha? <a href="recuperar-senha.html">recupere aqui!</a></p>
+    </section>
+</main>
+</body>
+</html>
