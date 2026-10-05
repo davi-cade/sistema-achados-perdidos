@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #111;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.menu-lateral {
+    position: relative;
+}
+
+.menu-lateral summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.menu-lateral summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu-superior{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 30px 0px 0px 0px;
+}
+
+.menu-lateral nav {
+    position: absolute;
+    right: 0;
+    top: 45px;
+
+    width: 220px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.menu-lateral nav a {
+    color: #111;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.menu-lateral nav a:hover {
+    background-color: #eeeeee;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.apresentacao {
+    min-height: 100vh;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 30px 30px 30px;
+}
+
+.apresentacao h1 {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    max-width: 900px;
+}
+
+.secao-achados {
+    padding: 20px 40px 0;
+}
+
+.secao-achados h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: lowercase;
+}
+
+.lista-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card-objeto {
+    display: block;
+    height: 400px;
+    background-color: #d9d9d9;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.card-objeto:hover {
+    background-color: #cccccc;
+}
+
+.imagem-placeholder {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ver-mais {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 25px;
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ver-mais:hover {
+    text-decoration: underline;
+}
+
+.rodape {
+    background-color: #000;
+    color: white;
+
+    padding: 18px 40px 10px;
+
+    font-size: 18px;
+}
+
+.rodape-colunas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 12px;
+}
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-coluna h2 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.rodape-coluna a {
+    color: white;
+    text-decoration: none;
+
+    line-height: 1.3;
+}
+
+.rodape-coluna a:hover {
+    text-decoration: underline;
+}
+
+.rodape-ajuda {
+    margin-bottom: 15px;
+}
+
+.rodape-ajuda h2 {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.rodape-ajuda p {
+    line-height: 1.3;
+}
+
+.rodape-institucional {
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.rodape-direitos {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        width: 120px;
+    }
+
+    .apresentacao {
+        padding: 40px 25px 25px;
+    }
+
+    .apresentacao h1 {
+        font-size: 40px;
+    }
+
+    .secao-achados {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .lista-cards {
+        gap: 12px;
+    }
+
+    .card-objeto {
+        height: 250px;
+    }
+
+    .rodape {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .rodape-colunas {
+        gap: 12px;
+    }
+}

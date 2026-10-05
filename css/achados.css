@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina-achados {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.busca-e-categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.campo-busca {
+    width: 100%;
+    height: 44px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 22px;
+    padding: 0 24px;
+    font-size: 16px;
+    outline: none;
+}
+
+.categorias {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.categoria.ativa {
+    background-color: #63d100;
+    color: #000000;
+    font-weight: bold;
+}
+
+.grade-objetos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.card-objeto {
+    display: block;
+    text-decoration: none;
+    aspect-ratio: 3 / 4;
+    width: 100%;
+}
+
+.imagem-placeholder {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+}
+
+.rodape {
+    background-color: #000;
+    color: white;
+
+    padding: 18px 40px 10px;
+
+    font-size: 18px;
+}
+
+.rodape-colunas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 12px;
+}
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-coluna h2 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.rodape-coluna a {
+    color: white;
+    text-decoration: none;
+
+    line-height: 1.3;
+}
+
+.rodape-coluna a:hover {
+    text-decoration: underline;
+}
+
+.rodape-ajuda {
+    margin-bottom: 15px;
+}
+
+.rodape-ajuda h2 {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.rodape-ajuda p {
+    line-height: 1.3;
+}
+
+.rodape-institucional {
+    border-top: 1px solid #555;
+
+    padding-top: 15px;
+
+    font-size: 15px;
+    text-align: center;
+}
+
+.rodape-direitos {
+    margin-top: 10px;
+
+    font-size: 15px;
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    .grade-objetos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

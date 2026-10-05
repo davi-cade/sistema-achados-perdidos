@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #202020;
+    color: #111;
+}
+
+.pagina-registro-realizado {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmacao-registro {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.icone-confirmacao {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #000;
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.confirmacao-registro h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.confirmacao-registro p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 7px;
+}
+
+.acoes-confirmacao{
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.acoes-confirmacao a {
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.acoes-confirmacao a:hover {
+    background-color: #333;
+}
+
+.acoes-confirmacao a:last-child {
+    background-color: #d9d9d9;
+    color: #111;
+}
+
+.acoes-confirmacao a:last-child:hover {
+    background-color: #c8c8c8;
+}
+
+.rodape {
+    min-height: 50px;
+    background-color: #000;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 3px 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .pagina-registro-realizado {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .confirmacao-registro {
+        padding: 20px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        gap: 3px;
+        text-align: center;
+        padding: 5px;
+    }
+}

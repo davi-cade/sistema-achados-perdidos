@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pagina-perfil {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.perfil-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.foto-placeholder {
+    width: 200px;
+    height: 200px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.nome-usuario {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.dados-lista {
+    list-style: none;
+    font-size: 25px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.botao-sair {
+    display: inline-block;
+    background-color: #ff5252;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 10px 32px;
+    border-radius: 50px;
+    transition: background-color 0.2s ease;
+}
+
+.botao-sair:hover {
+    background-color: #e04040;
+}
+
+.painel-registros {
+    height: 90%;
+    width: 70%;
+
+    background-color: #e6e6e6;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.painel-registros h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.lista-registros {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.registro-item {
+    background-color: #d9d9d9;
+    height: 220px;
+    border-radius: 14px;
+    width: 100%;
+}
